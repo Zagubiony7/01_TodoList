@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #d6d2d2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2rem solid rgb(76, 109, 227);
+  border-radius: 0.5rem;
+  background-color: rgba(111, 144, 233, 1);
+  background-image: linear-gradient(310deg, rgba(111, 144, 233, 1) 53%, rgba(139, 168, 243, 1) 100%);
+  min-width: 62rem;
+  min-height: 80vh;
+  font-size: 1.8rem;
+}
+
+.new-todo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+.add-todo,
+.todo-name {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+
+.todo-name {
+  flex-grow: 12;
+  background-color: #4b4de2;
+  color: #fff;
+}
+
+.todo-name::placeholder {
+  color: #bebbbb;
+  font-style: italic;
+}
+
+.add-todo {
+  cursor: pointer;
+  background-color: #e3ae52;
+}
+
+.add-todo:hover {
+  background-color: #e1a53e;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 3rem;
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #aeb1b2;
+  padding-bottom: 2rem;
+  word-break: normal;
+}
+
+li p {
+  max-width: 40rem;
+  word-break: break-all;
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.todo-actions span,
+.todo-actions input {
+  cursor: pointer;
+  padding: 0.1rem;
+}
+
+input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+}
+
+.todo-controls {
+  display: flex;
+  align-self: flex-end;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.clear-all,
+.sort-select {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #6b69e9;
+}
